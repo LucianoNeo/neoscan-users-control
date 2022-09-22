@@ -7,6 +7,8 @@ import axios from 'axios'
 import UserInput from '../components/UserInput'
 import PwdInput from '../components/PwdInput'
 import CityInput from '../components/CityInput'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function Users() {
 
@@ -17,7 +19,7 @@ export default function Users() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [cidade, setCidade] = useState('')
-
+    const navigate = useNavigate()
 
 
     function ordenaPorNome(a, b) {
@@ -30,7 +32,7 @@ export default function Users() {
 
 
     useEffect(() => {
-        console.log(import.meta.env.VITE_API_ADDRESS)
+
         if (isloading) {
             axios.get(import.meta.env.VITE_API_ADDRESS)
                 .then((response) => {
@@ -134,6 +136,7 @@ export default function Users() {
                 <FaSignOutAlt
                     size={36}
                     style={{ cursor: 'pointer' }}
+                    onClick={() => navigate('/')}
                 />
             </header>
             <section className={styles.searchContainer}>

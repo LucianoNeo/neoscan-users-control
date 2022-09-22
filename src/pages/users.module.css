@@ -1,25 +1,25 @@
 *::-webkit-scrollbar {
     width: 12px;
     border-radius: 10px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: #121214;
     border-radius: 10px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: #1a1a1c;
     border-radius: 10px;
-    border: 2px solid  #DE8F45 ;
-    
-  }
+    border: 2px solid #DE8F45;
+
+}
 
 header {
     background-color: #29292E;
     width: 100vw;
     height: 80px;
-    display: flex;    
+    display: flex;
     justify-content: space-between;
     color: aliceblue;
     align-items: center;
@@ -28,11 +28,12 @@ header {
     border-radius: 0 0 10px 10px;
 }
 
-h1{
+h1 {
     font-weight: 400;
 }
-.searchContainer{
-    
+
+.searchContainer {
+
     font-weight: 100;
     width: 800px;
     margin: 0 auto;
@@ -45,31 +46,31 @@ h1{
     overflow: hidden;
 }
 
-.icons{
-    
+.icons {
+
     transform: translateX(25px) translateY(10px);
-    
-    
+
+
 }
 
-input{
+input {
     font-size: 20px;
     background-color: #121214;
     border: none;
     line-height: 40px;
     color: aliceblue;
     padding-left: 40px;
-    width: 400px;
+
     border-radius: 5px;
 }
 
-ul{
+ul {
     margin: 0 auto;
     margin-top: 40px;
     list-style: none;
     display: flex;
     align-items: center;
-    
+
     flex-direction: column;
     overflow: auto;
     height: 60%;
@@ -78,7 +79,7 @@ ul{
 
 
 
-li{
+li {
     background-color: #121214;
     width: 80%;
     height: 120px;
@@ -89,7 +90,7 @@ li{
     margin-bottom: 20px;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,17 +99,17 @@ nav{
     margin: 0;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     margin: 0;
     align-items: flex-end;
     overflow: hidden;
     justify-content: end;
-    
+
 }
 
-nav li{
+nav li {
     margin: 0 auto;
     padding: 0;
     height: 50px;
@@ -125,16 +126,16 @@ nav li{
     justify-content: center;
 }
 
-nav li:hover{
+nav li:hover {
     border-bottom: 2px solid #DE8F45;
-    
+
 }
 
-.selected{
+.selected {
     border-bottom: 2px solid #DE8F45;
 }
 
-.cadastroContainer{
+.cadastroContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -144,14 +145,14 @@ nav li:hover{
     justify-content: center;
 }
 
-.cadastroContainer input{
-        font-size: 20px;
-        background-color: #121214;
-        border: none;
-        line-height: 40px;
-        color: aliceblue;
-        padding-left: 40px;
-        width: 200px;
-        border-radius: 5px;   
-        
+.cadastroContainer input {
+    font-size: 20px;
+    background-color: #121214;
+    border: none;
+    line-height: 40px;
+    color: aliceblue;
+    padding-left: 40px;
+    width: 200px;
+    border-radius: 5px;
+
 }
