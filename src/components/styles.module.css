@@ -1,0 +1,80 @@
+.title{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 100;
+    color: aliceblue
+}
+.title2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(222, 17, 52)
+}
+
+.icons{
+        color: aliceblue;
+        transform: translateX(25px);
+    }
+
+.iconsContainer .icons{
+    color: aliceblue;
+    transform: translateX(0);
+}
+
+
+.iconsContainer .icons:hover{
+    transform: scale(1.2);
+    color: crimson;
+}
+
+.iconUnblock{
+    color: aliceblue;
+}
+
+.iconUnblock:hover{
+transform: scale(1.2);
+color: green;
+}
+
+input{
+    font-size: 20px;
+    background-color: #121214;
+    border: none;
+    line-height: 40px;
+    color: aliceblue;
+    padding-left: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+img{
+    height: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    height: 120px;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
+    justify-content: space-evenly;
+}
+
+.cidade{
+    font-size: 14px;
+    color: #DE8F45;
+}
+
+.iconsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

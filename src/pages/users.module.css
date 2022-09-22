@@ -1,0 +1,157 @@
+*::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #121214;
+    border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #1a1a1c;
+    border-radius: 10px;
+    border: 2px solid  #DE8F45 ;
+    
+  }
+
+header {
+    background-color: #29292E;
+    width: 100vw;
+    height: 80px;
+    display: flex;    
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 10px 10px;
+}
+
+h1{
+    font-weight: 400;
+}
+.searchContainer{
+    
+    font-weight: 100;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #1a1a1c;
+    height: 80vh;
+    padding: 0 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.icons{
+    
+    transform: translateX(25px) translateY(10px);
+    
+    
+}
+
+input{
+    font-size: 20px;
+    background-color: #121214;
+    border: none;
+    line-height: 40px;
+    color: aliceblue;
+    padding-left: 40px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+ul{
+    margin: 0 auto;
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    overflow: auto;
+    height: 60%;
+    padding: 20px;
+}
+
+
+
+li{
+    background-color: #121214;
+    width: 80%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: flex-end;
+    overflow: hidden;
+    justify-content: end;
+    
+}
+
+nav li{
+    margin: 0 auto;
+    padding: 0;
+    height: 50px;
+    padding: 10px;
+    background-color: #1a1a1c;
+    border-bottom: 2px solid #1a1a1c;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 400ms;
+    width: 120px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav li:hover{
+    border-bottom: 2px solid #DE8F45;
+    
+}
+
+.selected{
+    border-bottom: 2px solid #DE8F45;
+}
+
+.cadastroContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.cadastroContainer input{
+        font-size: 20px;
+        background-color: #121214;
+        border: none;
+        line-height: 40px;
+        color: aliceblue;
+        padding-left: 40px;
+        width: 200px;
+        border-radius: 5px;   
+        
+}
