@@ -64,7 +64,7 @@ export default function Users() {
     async function deleteUser(id, username) {
         if (!confirm(`Confirma a remoção do usuário: ${username}?`)) return
         try {
-            const response = await axios.delete(import.meta.env.VITE_API_ADDRESS / id);
+            const response = await axios.delete(`${import.meta.env.VITE_API_ADDRESS}/${id}`);
             console.log(response.data);
             alert(`Usuário ${username} removido com sucesso!`)
             setIsLoading(true)

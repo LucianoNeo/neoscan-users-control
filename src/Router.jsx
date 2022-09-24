@@ -7,8 +7,8 @@ import Users from './pages/Users'
 export default function Router() {
     return (
         <Routes>
-            <Route path='/' element={<Users />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/' element={<Login />} />
+            <Route path='/users' element={<Users />} />
 
         </Routes>
     )
