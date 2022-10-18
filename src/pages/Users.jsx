@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { FaSearch, FaSignOutAlt } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 import CityInput from '../components/CityInput'
@@ -8,10 +9,10 @@ import PwdInput from '../components/PwdInput'
 import UserCard from '../components/UserCard'
 import UserInput from '../components/UserInput'
 import styles from './users.module.css'
-
+import { Context } from '../Context/AuthContext'
 
 export default function Users() {
-
+    const { authenticated, handleLogin, handleLogOut } = useContext(Context)
     const [users, setUsers] = useState(null)
     const [search, setSearch] = useState('')
     const [isloading, setIsLoading] = useState(true)
@@ -136,7 +137,10 @@ export default function Users() {
                 <FaSignOutAlt
                     size={36}
                     style={{ cursor: 'pointer' }}
-                    onClick={() => navigate('/')}
+                    onClick={() => {
+                        navigate('/')
+                        handleLogOut()
+                    }}
                 />
             </header>
             <section className={styles.searchContainer}>

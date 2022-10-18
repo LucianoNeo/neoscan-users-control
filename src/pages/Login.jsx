@@ -3,28 +3,22 @@ import { useNavigate } from 'react-router-dom'
 import Logo from '../components/Logo'
 import PwdInput from '../components/PwdInput'
 import styles from './login.module.css'
-
+import { useContext } from 'react'
+import { Context } from '../Context/AuthContext'
+import { useEffect } from 'react'
 
 
 
 export default function Login() {
+    const { authenticated, handleLogin, pass, setPass } = useContext(Context)
 
-    const [pass, setPass] = useState('')
     const navigate = useNavigate()
 
-
-    function handleEnter(e) {
-        e.preventDefault()
-        if (!pass) {
-            return alert('A senha é obrigatória!')
+    useEffect(() => {
+        if (authenticated) {
+            navigate('/users')
         }
-        if (pass !== import.meta.env.VITE_PASSWORD) {
-            setPass('')
-            return alert('Senha Incorreta!')
-
-        }
-        navigate('/users')
-    }
+    }, [authenticated])
 
     return (
         <div className={styles.page}>
@@ -36,7 +30,7 @@ export default function Login() {
                         onchange={(event) => setPass(event.target.value)}
                     />
                     <button
-                        onClick={handleEnter}
+                        onClick={handleLogin}
                         type='submit'
                         className={styles.button}>Entrar</button>
                 </form>
