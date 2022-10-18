@@ -4,3 +4,6 @@
 
 Sistema criado para gerenciamento de usuários do NeoScan.
 Criado com ReactJS/Vite e utiliza Axios para realizar consultas à uma API rest também criada exclusivamente para ter acesso ao banco de dados MYSQL do projeto.
+Utiliza autenticação via JWT tanto para acesso ao gerenciamento quanto para o acesso à API em NODEJS.<br>
+https://github.com/LucianoNeo/api-rest-mysql
+
