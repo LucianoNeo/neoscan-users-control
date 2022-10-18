@@ -1,13 +1,13 @@
-import React, { useEffect, useState, useMemo } from 'react'
-import { FaSignOutAlt, FaSearch } from 'react-icons/fa'
-import Logo from '../components/Logo'
-import UserCard from '../components/UserCard'
-import styles from './users.module.css'
 import axios from 'axios'
-import UserInput from '../components/UserInput'
-import PwdInput from '../components/PwdInput'
-import CityInput from '../components/CityInput'
+import React, { useEffect, useState } from 'react'
+import { FaSearch, FaSignOutAlt } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
+import CityInput from '../components/CityInput'
+import Logo from '../components/Logo'
+import PwdInput from '../components/PwdInput'
+import UserCard from '../components/UserCard'
+import UserInput from '../components/UserInput'
+import styles from './users.module.css'
 
 
 export default function Users() {

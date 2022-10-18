@@ -1,11 +1,8 @@
-import React from 'react'
-import styles from './login.module.css'
-import { FaUser, FaLock } from 'react-icons/fa'
-import Logo from '../components/Logo'
-import UserInput from '../components/UserInput'
-import PwdInput from '../components/PwdInput'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Logo from '../components/Logo'
+import PwdInput from '../components/PwdInput'
+import styles from './login.module.css'
 
 
 
